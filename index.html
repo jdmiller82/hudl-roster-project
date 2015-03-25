@@ -9,28 +9,35 @@
   </head>
   <body>
     <div id="page">
-      <header class="roster-header">
-        <h2>
-          Manage Roster
-        </h2>
-        <h3>
-          Hudl - JV Football (UX)
-        </h3>
-      </header>
+      <header class="roster-header"></header>
       <section class="add-athlete">
-        <button><span class="fa fa-import"></span><span>import roster (excel, csv)</span></button><button><span class="fa fa-export"></span><span>export roster</span></button>
+        <a class="waves-effect waves-light btn" style="margin-right:20px"><i class="mdi-file-file-upload left"></i><span>import roster (excel, csv)</span></a><a class="waves-effect waves-light btn"><i class="mdi-file-file-download left"></i><span>export roster</span></a>
         <form>
           <legend>Add a New Athlete</legend>
-          <fieldset>
-            <label>First Name</label><input type="text">
+          <fieldset class="input-field">
+            <label for="first-name">First Name</label><input class="validate" type="text">
           </fieldset>
-          <fieldset>
-            <label>Last Name</label><input type="text">
+          <fieldset class="input-field">
+            <label for="last-name">Last Name</label><input class="validate" type="text">
           </fieldset>
-          <fieldset>
-            <label>Email Address</label><input type="text">
+          <fieldset class="input-field">
+            <label for="email">Email Address</label><input class="validate" type="email">
+          </fieldset>
+          <fieldset class="input-field">
+            <label for="first-name">Jersey Number</label><input class="validate" type="text">
           </fieldset>
         </form>
+        <select>
+          <option disabled selected value="">
+            Position
+          </option>
+          <option value="1">
+            Quarterback
+          </option>
+          <option value="2">
+            Linebacker
+          </option>
+        </select>
       </section>
     </div>
   </body>

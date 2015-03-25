@@ -1,23 +1,32 @@
 section.add-athlete
-  button
-    span.fa.fa-import
+  //<a class="waves-effect waves-light btn"><i class="mdi-file-cloud left"></i>button</a>
+  a.waves-effect.waves-light.btn style='margin-right:20px'
+    i.mdi-file-file-upload.left
     span import roster (excel, csv)
-    
-  button
-    span.fa.fa-export
+  a.waves-effect.waves-light.btn
+    i.mdi-file-file-download.left
     span export roster
   
   form
     legend Add a New Athlete
     
-    fieldset
-      label First Name
-      input type='text'
+    fieldset.input-field
+      label for='first-name' First Name
+      input.validate type='text'
     
-    fieldset
-      label Last Name
-      input type='text'
+    fieldset.input-field
+      label for='last-name' Last Name
+      input.validate type='text'
     
-    fieldset
-      label Email Address
-      input type='text'
+    fieldset.input-field
+      label for='email' Email Address
+      input.validate type='email'
+    
+    fieldset.input-field
+      label for='first-name' Jersey Number
+      input.validate type='text'
+  
+  select
+    option [value='' disabled selected] Position
+    option [value='1'] Quarterback
+    option [value='2'] Linebacker
