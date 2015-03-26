@@ -1,3 +1,13 @@
+legend {
+  display: block;
+  margin-bottom: 20px !important;
+  padding-bottom: 6px !important;
+  width: 100%;
+  font-size: 0.875rem;;
+  color:color("blue-grey", "base");
+  border-bottom: 1px solid color("blue-grey", "base") !important;
+}
+
 /* Remove Focus Boxes */
 select:focus {
   outline: 1px solid color("materialize-red", "lighten-4");
@@ -32,6 +42,7 @@ label {
   }
   label.active {
     font-size: $label-font-size;
+    color:color("blue-grey", "base");
     @include transform(translateY(-140%));
   }
 
@@ -126,7 +137,7 @@ textarea.materialize-textarea {
   border: none;
   border-bottom: 1px solid $input-border-color;
   outline: none;
-  height: 3rem;
+  height: 2rem;
   width: 100%;
   font-size: 1rem;
   margin: 0 0 15px 0;
@@ -446,27 +457,25 @@ input[type=checkbox]:not(:disabled) ~ .lever:active:after {
   margin-top: 15px;
 
   input.select-dropdown {
-    // position: relative;
-    // cursor: pointer;
-    text-align: left;
-    color: #666;
-    // background-color: transparent;
-    // border: none;
-    // border-bottom: 1px solid $input-border-color;
-    // outline: none;
-    // height: 3rem;
-    // line-height: 3rem;
-    // width: 100%;
-    // font-size: 1rem;
-    // margin: 0 0 15px 0;
-    // padding: 0;
-    // display: block;
-    outline: 1px solid green;
+    position: relative;
+    cursor: pointer;
+    color: $input-border-color;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $input-border-color;
+    outline: none;
+    height: 2rem;
+    line-height: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+    padding: 0;
+    display: block;
   }
   .mdi-navigation-arrow-drop-down {
       position: absolute;
       right: 0;
-      top: 13px;
+      top: 0;
       font-size: 23px;
     }
 }

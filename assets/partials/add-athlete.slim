@@ -1,8 +1,8 @@
 section.add-athlete
-  //<a class="waves-effect waves-light btn"><i class="mdi-file-cloud left"></i>button</a>
   a.waves-effect.waves-light.btn style='margin-right:20px'
     i.mdi-file-file-upload.left
     span import roster (excel, csv)
+  
   a.waves-effect.waves-light.btn
     i.mdi-file-file-download.left
     span export roster
@@ -10,23 +10,50 @@ section.add-athlete
   form
     legend Add a New Athlete
     
-    fieldset.input-field
-      label for='first-name' First Name
-      input.validate type='text'
+    div.col-wrap
+      div.img-upload
+        a.waves-effect.waves-light href='#'
+          i.mdi-image-camera-alt.medium
+      
+      div.form-col
+        fieldset.input-field
+          label for='first-name' First Name
+          input.validate type='text'
+      
+        fieldset.input-field
+          label for='last-name' Last Name
+          input.validate type='text'
+      
+        fieldset.input-field
+          label for='email' Email Address
+          input.validate type='email'
+      
+      div.form-col
+        fieldset.input-field
+          label for='first-name' Jersey Number
+          input.validate type='text'
+        
+        fieldset.input-field
+          select
+            option [value='' disabled selected] Position
+            option [value='1'] Quarterback
+            option [value='2'] Linebacker
+        
+        fieldset
+          select
+            option [value='' disabled selected] Graduation Year
+            option [value='1'] 2015
+            option [value='2'] 2016
+            option [value='3'] 2017
+            option [value='4'] 2018
+            option [value='5'] 2019
+            option [value='6'] 2020
     
-    fieldset.input-field
-      label for='last-name' Last Name
-      input.validate type='text'
-    
-    fieldset.input-field
-      label for='email' Email Address
-      input.validate type='email'
-    
-    fieldset.input-field
-      label for='first-name' Jersey Number
-      input.validate type='text'
-  
-  select
-    option [value='' disabled selected] Position
-    option [value='1'] Quarterback
-    option [value='2'] Linebacker
+    div.details-add
+      a.waves-effect.waves-light.btn.gray style='margin-right:20px' href='#'
+        span Add More Details
+      
+      a.waves-effect.waves-light.btn.green href='#'
+        i.mdi-content-add-circle.left
+        span Add Athlete
+      

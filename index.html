@@ -9,35 +9,81 @@
   </head>
   <body>
     <div id="page">
-      <header class="roster-header"></header>
+      <header class="roster-header">
+        <h2>
+          Manage Roster
+        </h2>
+        <h3>
+          Hudl - JV Football (UX)
+        </h3>
+      </header>
       <section class="add-athlete">
         <a class="waves-effect waves-light btn" style="margin-right:20px"><i class="mdi-file-file-upload left"></i><span>import roster (excel, csv)</span></a><a class="waves-effect waves-light btn"><i class="mdi-file-file-download left"></i><span>export roster</span></a>
         <form>
           <legend>Add a New Athlete</legend>
-          <fieldset class="input-field">
-            <label for="first-name">First Name</label><input class="validate" type="text">
-          </fieldset>
-          <fieldset class="input-field">
-            <label for="last-name">Last Name</label><input class="validate" type="text">
-          </fieldset>
-          <fieldset class="input-field">
-            <label for="email">Email Address</label><input class="validate" type="email">
-          </fieldset>
-          <fieldset class="input-field">
-            <label for="first-name">Jersey Number</label><input class="validate" type="text">
-          </fieldset>
+          <div class="col-wrap">
+            <div class="img-upload">
+              <a class="waves-effect waves-light" href="#"><i class="mdi-image-camera-alt medium"></i></a>
+            </div>
+            <div class="form-col">
+              <fieldset class="input-field">
+                <label for="first-name">First Name</label><input class="validate" type="text">
+              </fieldset>
+              <fieldset class="input-field">
+                <label for="last-name">Last Name</label><input class="validate" type="text">
+              </fieldset>
+              <fieldset class="input-field">
+                <label for="email">Email Address</label><input class="validate" type="email">
+              </fieldset>
+            </div>
+            <div class="form-col">
+              <fieldset class="input-field">
+                <label for="first-name">Jersey Number</label><input class="validate" type="text">
+              </fieldset>
+              <fieldset class="input-field">
+                <select>
+                  <option disabled selected value="">
+                    Position
+                  </option>
+                  <option value="1">
+                    Quarterback
+                  </option>
+                  <option value="2">
+                    Linebacker
+                  </option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <select>
+                  <option disabled selected value="">
+                    Graduation Year
+                  </option>
+                  <option value="1">
+                    2015
+                  </option>
+                  <option value="2">
+                    2016
+                  </option>
+                  <option value="3">
+                    2017
+                  </option>
+                  <option value="4">
+                    2018
+                  </option>
+                  <option value="5">
+                    2019
+                  </option>
+                  <option value="6">
+                    2020
+                  </option>
+                </select>
+              </fieldset>
+            </div>
+          </div>
+          <div class="details-add">
+            <a class="waves-effect waves-light btn gray" href="#" style="margin-right:20px"><span>Add More Details</span></a><a class="waves-effect waves-light btn green" href="#"><i class="mdi-content-add-circle left"></i><span>Add Athlete</span></a>
+          </div>
         </form>
-        <select>
-          <option disabled selected value="">
-            Position
-          </option>
-          <option value="1">
-            Quarterback
-          </option>
-          <option value="2">
-            Linebacker
-          </option>
-        </select>
       </section>
     </div>
   </body>
