@@ -1906,7 +1906,7 @@
 		},
 	"\/bower_components\/parsleyjs\/dist\/parsley.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/parsleyjs\/dist\/parsley.js",
 		"outputAbbreviatedPath": "\/bower_components\/parsleyjs\/dist\/min\/parsley-min.js",
@@ -2640,14 +2640,8 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/parsleyjs\/dist\/parsley.js",
-			"position": 1,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/assets\/scripts\/materialize\/bin\/materialize.js",
-			"position": 2,
+			"position": 1,
 			"type": 0
 			}
 		]

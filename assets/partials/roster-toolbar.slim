@@ -1,7 +1,22 @@
 section.roster-toolbar
-   nav
-    div.nav-wrapper
-      form
-        fieldset.input-field
-          input#search type='text'
-          label for='search': i.mdi-action-search
+  div.card.white
+    div.card-content
+      div.filter-select
+        span Filter by:
+        form
+          fieldset.input-field
+            select
+              option [value='1' selected] 2015-2016
+              option [value='2'] 2014-2015
+              option [value='3'] 2013-2014
+              option [value='4'] 2012-2013
+              option [value='5'] All Seasons
+      
+      div.search
+        form
+          fieldset.input-field
+            label
+              i.mdi-action-search.small
+              span Search athletes
+            input type='text'
+            //<label for="search"><i class="mdi-action-search"></i></label>

@@ -4755,26 +4755,6 @@ nav {
 
   .navbar-fixed {
     height: 64px; } }
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Thin.ttf");
-  font-weight: 200; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Light.ttf");
-  font-weight: 300; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Regular.ttf");
-  font-weight: 400; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Medium.ttf");
-  font-weight: 500; }
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Bold.ttf");
-  font-weight: 700; }
 .card-panel {
   padding: 20px;
   margin: 0.5rem 0 1rem 0;
@@ -7606,11 +7586,15 @@ section.add-athlete .form-col:after {
 section.add-athlete .form-col fieldset {
   margin-left: 20px;
 }
-section.add-athlete .form-col fieldset input[type='text'] {
+section.add-athlete .form-col fieldset input[type='text']:focus,
+section.add-athlete .form-col fieldset input[type='text'].valid {
   color: #607d8b;
 }
+section.add-athlete .form-col fieldset.input-field {
+  margin-top: 2px;
+}
 section.add-athlete .form-col fieldset.input-field .select-wrapper {
-  margin: 0 0 30px;
+  margin: 0 0 15px;
 }
 section.add-athlete .details-add {
   text-align: right;
@@ -7641,4 +7625,103 @@ section.roster-toolbar:after {
 }
 section.roster-toolbar:after {
   clear: both;
+}
+section.roster-toolbar .card-content {
+  margin: 0;
+  padding: 0;
+}
+section.roster-toolbar .filter-select {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 44.4444444444444%;
+  margin-left: 0%;
+  margin-right: 0%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+section.roster-toolbar .filter-select:before,
+section.roster-toolbar .filter-select:after {
+  content: '';
+  display: table;
+}
+section.roster-toolbar .filter-select:after {
+  clear: both;
+}
+section.roster-toolbar .filter-select span {
+  margin: 0 20px;
+  height: 48px;
+  line-height: 48px;
+  color: #607d8b;
+  font-size: 0.875rem;
+}
+section.roster-toolbar .filter-select >form {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -o-box-flex: 2;
+  box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+section.roster-toolbar .filter-select >form >fieldset.input-field {
+  margin-top: 0;
+}
+section.roster-toolbar .filter-select >form >fieldset.input-field .select-wrapper {
+  margin-top: 8px;
+  border-left: 1px solid #607d8b;
+  border-right: 1px solid #607d8b;
+}
+section.roster-toolbar .filter-select >form >fieldset.input-field .select-wrapper >input {
+  margin-bottom: 8px;
+  border: none;
+  color: #607d8b;
+}
+section.roster-toolbar .filter-select >form >fieldset.input-field .select-wrapper >i {
+  margin-right: 6px;
+  line-height: 32px;
+  color: #607d8b;
+}
+section.roster-toolbar .search {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 44.4444444444444%;
+  margin-left: 11.1111111111111%;
+  margin-right: 0%;
+}
+section.roster-toolbar .search:before,
+section.roster-toolbar .search:after {
+  content: '';
+  display: table;
+}
+section.roster-toolbar .search:after {
+  clear: both;
+}
+section.roster-toolbar .search >form >fieldset.input-field {
+  margin-top: 0;
+  height: 48px;
+}
+section.roster-toolbar .search >form >fieldset.input-field label {
+  top: 0.55em;
+}
+section.roster-toolbar .search >form >fieldset.input-field label span {
+  position: absolute;
+  margin-left: 10px;
+  height: 31px;
+  line-height: 31px;
+  width: 150px;
+}
+section.roster-toolbar .search >form >fieldset.input-field input {
+  margin-bottom: 0;
+  height: 48px;
+}
+section.roster-toolbar .search >form >fieldset.input-field input:focus {
+  color: #607d8b;
 }

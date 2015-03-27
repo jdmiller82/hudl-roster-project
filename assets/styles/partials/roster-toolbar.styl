@@ -2,3 +2,64 @@ section.roster-toolbar
   center(900px)
   margin 20px 0
   padding 0 20px
+  
+  .card-content
+    margin 0
+    padding 0
+  
+  .filter-select
+    span(4/9)
+    display flex
+    
+    span
+      margin 0 20px
+      height 48px
+      line-height 48px
+      color #607d8b
+      font-size 0.875rem
+    
+    >form
+      flex 2
+      
+      >fieldset.input-field
+        margin-top 0
+        
+        .select-wrapper
+          margin-top 8px
+          border-left 1px solid #607d8b
+          border-right 1px solid #607d8b
+          
+          >input
+            margin-bottom 8px
+            border none
+            color #607d8b
+          >i
+            margin-right 6px 
+            line-height 32px
+            color #607d8b
+  
+  .search
+    span(4/9, offset: 1/9)
+    //outline 1px solid red
+    
+    >form
+      >fieldset.input-field
+        margin-top 0
+        height 48px
+        
+        label
+          top 0.55em
+          
+          span
+            position absolute
+            margin-left 10px
+            height 31px
+            line-height @height
+            width 150px
+        
+        input
+          margin-bottom 0
+          height @height
+          
+          &:focus
+            color #607d8b

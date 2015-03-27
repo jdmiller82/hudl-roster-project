@@ -53,7 +53,7 @@
                   </option>
                 </select>
               </fieldset>
-              <fieldset>
+              <fieldset class="input-field">
                 <select>
                   <option disabled selected value="">
                     Graduation Year
@@ -86,15 +86,41 @@
         </form>
       </section>
       <section class="roster-toolbar">
-        <nav>
-          <div class="nav-wrapper">
-            <form>
-              <fieldset class="input-field">
-                <input id="search" type="text"><label for="search"><i class="mdi-action-search"></i></label>
-              </fieldset>
-            </form>
+        <div class="card white">
+          <div class="card-content">
+            <div class="filter-select">
+              <span>Filter by:</span>
+              <form>
+                <fieldset class="input-field">
+                  <select>
+                    <option selected value="1">
+                      2015-2016
+                    </option>
+                    <option value="2">
+                      2014-2015
+                    </option>
+                    <option value="3">
+                      2013-2014
+                    </option>
+                    <option value="4">
+                      2012-2013
+                    </option>
+                    <option value="5">
+                      All Seasons
+                    </option>
+                  </select>
+                </fieldset>
+              </form>
+            </div>
+            <div class="search">
+              <form>
+                <fieldset class="input-field">
+                  <label><i class="mdi-action-search small"></i><span>Search athletes</span></label><input type="text">
+                </fieldset>
+              </form>
+            </div>
           </div>
-        </nav>
+        </div>
       </section>
     </div>
   </body>
