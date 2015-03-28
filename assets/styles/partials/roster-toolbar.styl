@@ -3,6 +3,9 @@ section.roster-toolbar
   margin 20px 0
   padding 0 20px
   
+  .card
+    margin 0
+  
   .card-content
     margin 0
     padding 0
@@ -39,7 +42,7 @@ section.roster-toolbar
             color #607d8b
   
   .search
-    span(4/9, offset: 1/9)
+    span(3/9, offset: 2/9)
     //outline 1px solid red
     
     >form
@@ -49,6 +52,9 @@ section.roster-toolbar
         
         label
           top 0.55em
+          
+          i
+            color #607d8b
           
           span
             position absolute
@@ -61,5 +67,5 @@ section.roster-toolbar
           margin-bottom 0
           height @height
           
-          &:focus
+          &:focus, &.valid
             color #607d8b

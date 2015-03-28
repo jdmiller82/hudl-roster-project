@@ -1,0 +1,132 @@
+section.roster-list
+  center(900px)
+  margin 20px 0
+  padding 0 20px
+  
+  .card
+    margin 0 0 20px
+    
+    .card-content
+      display table
+      width 100% 
+      padding 0
+      
+      .profile-image
+        display table-cell
+        width 150px
+        
+        img
+          display block
+          margin 0
+          padding 0
+          width 150px
+          height @width
+          overflow hidden
+        
+        .player-number-year
+          display table
+          height 32px
+          line-height @height
+          background #607d8b
+          color white
+          
+          .jersey-number
+            display table-cell
+            width @height
+            height @height
+            text-align center
+            
+            &.sr
+              background #c62828
+          
+          .year
+            display table-cell
+            width 118px
+            text-align center
+      
+      .profile-details
+        display table-cell
+        vertical-align top
+        
+        .header
+          display block
+          padding 0 20px
+          height 42px
+          line-height @height
+          
+          h4
+            display inline-block
+            margin-right 20px
+            font-size 1.250em
+            font-weight 500
+            color #607d8b
+          
+          span a
+            display inline-block
+            text-transform: lowercase
+            color #00acc1
+            text-decoration underline
+            font-size 0.875rem
+        
+        .details
+          display table
+          margin-left 20px
+          color #607d8b
+          
+          .vitals, .seasons, .activity
+            display table-cell
+            
+            h5
+              display block
+              margin 0 0 13px
+              border-bottom 1px solid #607d8b
+            
+            p
+              font-size 0.875rem
+              margin-bottom 13px
+              
+              strong
+                font-weight bold
+            
+          .vitals
+            padding-right 20px
+            width 140px
+          
+          .seasons
+            padding-right 20px
+            width 80px
+            
+            p
+              margin-bottom 7px
+          
+          .activity
+            width 470px
+            
+            h5
+              margin-right 20px
+            
+            .charts
+              width 470px
+              height 87px
+              overflow-x scroll
+              overflow-y hidden
+            
+            ul
+              cf()
+              ///height 87px
+              //width 612px
+              
+              li
+                //display inline-block
+                //margin-right 15px
+                //float left
+                
+                .circliful
+                  .circle-text
+                    font-size 1.25rem !important
+                    font-weight 500
+                    
+                  .circle-info
+                    font-size 0.65rem
+                    line-height 117px !important
+      

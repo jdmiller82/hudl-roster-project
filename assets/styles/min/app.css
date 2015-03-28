@@ -7626,6 +7626,9 @@ section.roster-toolbar:after {
 section.roster-toolbar:after {
   clear: both;
 }
+section.roster-toolbar .card {
+  margin: 0;
+}
 section.roster-toolbar .card-content {
   margin: 0;
   padding: 0;
@@ -7692,8 +7695,8 @@ section.roster-toolbar .search {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 44.4444444444444%;
-  margin-left: 11.1111111111111%;
+  width: 33.3333333333333%;
+  margin-left: 22.2222222222222%;
   margin-right: 0%;
 }
 section.roster-toolbar .search:before,
@@ -7711,6 +7714,9 @@ section.roster-toolbar .search >form >fieldset.input-field {
 section.roster-toolbar .search >form >fieldset.input-field label {
   top: 0.55em;
 }
+section.roster-toolbar .search >form >fieldset.input-field label i {
+  color: #607d8b;
+}
 section.roster-toolbar .search >form >fieldset.input-field label span {
   position: absolute;
   margin-left: 10px;
@@ -7722,6 +7728,184 @@ section.roster-toolbar .search >form >fieldset.input-field input {
   margin-bottom: 0;
   height: 48px;
 }
-section.roster-toolbar .search >form >fieldset.input-field input:focus {
+section.roster-toolbar .search >form >fieldset.input-field input:focus,
+section.roster-toolbar .search >form >fieldset.input-field input.valid {
   color: #607d8b;
+}
+section.roster-list {
+  *zoom: 1;
+  width: auto;
+  max-width: 900px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+section.roster-list:before,
+section.roster-list:after {
+  content: '';
+  display: table;
+}
+section.roster-list:after {
+  clear: both;
+}
+section.roster-list .card {
+  margin: 0 0 20px;
+}
+section.roster-list .card .card-content {
+  display: table;
+  width: 100%;
+  padding: 0;
+}
+section.roster-list .card .card-content .profile-image {
+  display: table-cell;
+  width: 150px;
+}
+section.roster-list .card .card-content .profile-image img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+section.roster-list .card .card-content .profile-image .player-number-year {
+  display: table;
+  height: 32px;
+  line-height: 32px;
+  background: #607d8b;
+  color: #fff;
+}
+section.roster-list .card .card-content .profile-image .player-number-year .jersey-number {
+  display: table-cell;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+}
+section.roster-list .card .card-content .profile-image .player-number-year .jersey-number.sr {
+  background: #c62828;
+}
+section.roster-list .card .card-content .profile-image .player-number-year .year {
+  display: table-cell;
+  width: 118px;
+  text-align: center;
+}
+section.roster-list .card .card-content .profile-details {
+  display: table-cell;
+  vertical-align: top;
+}
+section.roster-list .card .card-content .profile-details .header {
+  display: block;
+  padding: 0 20px;
+  height: 42px;
+  line-height: 42px;
+}
+section.roster-list .card .card-content .profile-details .header h4 {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #607d8b;
+}
+section.roster-list .card .card-content .profile-details .header span a {
+  display: inline-block;
+  text-transform: lowercase;
+  color: #00acc1;
+  text-decoration: underline;
+  font-size: 0.875rem;
+}
+section.roster-list .card .card-content .profile-details .details {
+  display: table;
+  margin-left: 20px;
+  color: #607d8b;
+}
+section.roster-list .card .card-content .profile-details .details .vitals,
+section.roster-list .card .card-content .profile-details .details .seasons,
+section.roster-list .card .card-content .profile-details .details .activity {
+  display: table-cell;
+}
+section.roster-list .card .card-content .profile-details .details .vitals h5,
+section.roster-list .card .card-content .profile-details .details .seasons h5,
+section.roster-list .card .card-content .profile-details .details .activity h5 {
+  display: block;
+  margin: 0 0 13px;
+  border-bottom: 1px solid #607d8b;
+}
+section.roster-list .card .card-content .profile-details .details .vitals p,
+section.roster-list .card .card-content .profile-details .details .seasons p,
+section.roster-list .card .card-content .profile-details .details .activity p {
+  font-size: 0.875rem;
+  margin-bottom: 13px;
+}
+section.roster-list .card .card-content .profile-details .details .vitals p strong,
+section.roster-list .card .card-content .profile-details .details .seasons p strong,
+section.roster-list .card .card-content .profile-details .details .activity p strong {
+  font-weight: bold;
+}
+section.roster-list .card .card-content .profile-details .details .vitals {
+  padding-right: 20px;
+  width: 140px;
+}
+section.roster-list .card .card-content .profile-details .details .seasons {
+  padding-right: 20px;
+  width: 80px;
+}
+section.roster-list .card .card-content .profile-details .details .seasons p {
+  margin-bottom: 7px;
+}
+section.roster-list .card .card-content .profile-details .details .activity {
+  width: 470px;
+}
+section.roster-list .card .card-content .profile-details .details .activity h5 {
+  margin-right: 20px;
+}
+section.roster-list .card .card-content .profile-details .details .activity .charts {
+  width: 470px;
+  height: 87px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+section.roster-list .card .card-content .profile-details .details .activity ul {
+  *zoom: 1;
+}
+section.roster-list .card .card-content .profile-details .details .activity ul:before,
+section.roster-list .card .card-content .profile-details .details .activity ul:after {
+  content: '';
+  display: table;
+}
+section.roster-list .card .card-content .profile-details .details .activity ul:after {
+  clear: both;
+}
+section.roster-list .card .card-content .profile-details .details .activity ul li .circliful .circle-text {
+  font-size: 1.25rem !important;
+  font-weight: 500;
+}
+section.roster-list .card .card-content .profile-details .details .activity ul li .circliful .circle-info {
+  font-size: 0.65rem;
+  line-height: 117px !important;
+}
+.circliful {
+  position: relative;
+}
+.circle-text,
+.circle-info,
+.circle-text-half,
+.circle-info-half {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+}
+.circle-info,
+.circle-info-half {
+  color: #999;
+}
+.circliful .fa {
+  margin: -10px 3px 0 3px;
+  position: relative;
+  bottom: 4px;
 }
