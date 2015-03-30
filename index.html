@@ -4,6 +4,7 @@
     <title>Hudl Roster UI Challenge</title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/styles/min/materialize.css" rel="stylesheet" type="text/css">
     <link href="assets/styles/min/app.css" rel="stylesheet" type="text/css">
     <script src="assets/scripts/min/app.js"></script>
   </head>
@@ -166,26 +167,34 @@
                   <h5>
                     Video Activity
                   </h5>
-                  <ul class="cycle-slideshow" data-cycle-carousel-visible="4" data-cycle-fx="carousel" data-cycle-slides="&gt; li" data-cycle-timeout="1000">
+                  <ul class="cycle-slideshow" data-allow-wrap="false" data-cycle-carousel-fluid="true" data-cycle-carousel-visible="1" data-cycle-fx="carousel" data-cycle-next="#next" data-cycle-pager="#pager" data-cycle-prev="#prev" data-cycle-slides="&gt; li" data-cycle-timeout="0">
                     <li>
                       <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="today" data-percent="25" data-text="15m" data-width="5"></div>
-                    </li>
-                    <li>
                       <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="yesterday" data-percent="75" data-text="45m" data-width="5"></div>
-                    </li>
-                    <li>
                       <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="last 7 days" data-percent="32" data-text="2h25m" data-width="5"></div>
                     </li>
                     <li>
-                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="playlist 1" data-percent="87" data-text="87%" data-width="5"></div>
+                      <div class="playlist-desc">
+                        <p>
+                          <span>Playlist</span><b>Lincoln High School (8/13)</b><em>Game Footage</em>
+                        </p>
+                      </div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="watched" data-percent="33" data-text="20m" data-width="5"></div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="videos" data-percent="33" data-text="2 of 6" data-width="5"></div>
                     </li>
                     <li>
-                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="playlist 2" data-percent="62" data-text="62%" data-width="5"></div>
-                    </li>
-                    <li>
-                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="playlist 3" data-percent="45" data-text="45%" data-width="5"></div>
+                      <div class="playlist-desc">
+                        <p>
+                          <span>Playlist</span><b>Lincoln High School (8/13)</b><em>Practice</em>
+                        </p>
+                      </div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="watched" data-percent="80" data-text="1h10m" data-width="5"></div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="videos" data-percent="80" data-text="4 of 5" data-width="5"></div>
                     </li>
                   </ul>
+                  <div class="cycle-nav">
+                    <a class="prev" href="#" id="prev"><i class="mdi-hardware-keyboard-arrow-left medium"></i></a><a class="next" href="#" id="next"><i class="mdi-hardware-keyboard-arrow-right medium"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -234,26 +243,34 @@
                   <h5>
                     Video Activity
                   </h5>
-                  <ul class="cycle-slideshow" data-cycle-carousel-visible="4" data-cycle-fx="carousel" data-cycle-slides="&gt; li" data-cycle-timeout="1000">
+                  <ul class="cycle-slideshow" data-allow-wrap="false" data-cycle-carousel-fluid="true" data-cycle-carousel-visible="1" data-cycle-fx="carousel" data-cycle-next="#next2" data-cycle-pager="#pager" data-cycle-prev="#prev2" data-cycle-slides="&gt; li" data-cycle-timeout="0">
                     <li>
                       <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="today" data-percent="25" data-text="15m" data-width="5"></div>
-                    </li>
-                    <li>
                       <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="yesterday" data-percent="75" data-text="45m" data-width="5"></div>
-                    </li>
-                    <li>
                       <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="last 7 days" data-percent="32" data-text="2h25m" data-width="5"></div>
                     </li>
                     <li>
-                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="playlist 1" data-percent="87" data-text="87%" data-width="5"></div>
+                      <div class="playlist-desc">
+                        <p>
+                          <span>Playlist</span><b>Lincoln High School (8/13)</b><em>Game Footage</em>
+                        </p>
+                      </div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="watched" data-percent="33" data-text="20m" data-width="5"></div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="videos" data-percent="33" data-text="2 of 6" data-width="5"></div>
                     </li>
                     <li>
-                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="playlist 2" data-percent="62" data-text="62%" data-width="5"></div>
-                    </li>
-                    <li>
-                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="playlist 3" data-percent="45" data-text="45%" data-width="5"></div>
+                      <div class="playlist-desc">
+                        <p>
+                          <span>Playlist</span><b>Lincoln High School (8/13)</b><em>Practice</em>
+                        </p>
+                      </div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="watched" data-percent="80" data-text="1h10m" data-width="5"></div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="videos" data-percent="80" data-text="4 of 5" data-width="5"></div>
                     </li>
                   </ul>
+                  <div class="cycle-nav">
+                    <a class="prev" href="#" id="prev2"><i class="mdi-hardware-keyboard-arrow-left medium"></i></a><a class="next" href="#" id="next2"><i class="mdi-hardware-keyboard-arrow-right medium"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -302,26 +319,110 @@
                   <h5>
                     Video Activity
                   </h5>
-                  <ul class="cycle-slideshow" data-cycle-carousel-visible="4" data-cycle-fx="carousel" data-cycle-slides="&gt; li" data-cycle-timeout="1000">
+                  <ul class="cycle-slideshow" data-allow-wrap="false" data-cycle-carousel-fluid="true" data-cycle-carousel-visible="1" data-cycle-fx="carousel" data-cycle-next="#next3" data-cycle-pager="#pager" data-cycle-prev="#prev3" data-cycle-slides="&gt; li" data-cycle-timeout="0">
                     <li>
                       <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="today" data-percent="25" data-text="15m" data-width="5"></div>
-                    </li>
-                    <li>
                       <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="yesterday" data-percent="75" data-text="45m" data-width="5"></div>
-                    </li>
-                    <li>
                       <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="last 7 days" data-percent="32" data-text="2h25m" data-width="5"></div>
                     </li>
                     <li>
-                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="playlist 1" data-percent="87" data-text="87%" data-width="5"></div>
+                      <div class="playlist-desc">
+                        <p>
+                          <span>Playlist</span><b>Lincoln High School (8/13)</b><em>Game Footage</em>
+                        </p>
+                      </div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="watched" data-percent="33" data-text="20m" data-width="5"></div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="videos" data-percent="33" data-text="2 of 6" data-width="5"></div>
                     </li>
                     <li>
-                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="playlist 2" data-percent="62" data-text="62%" data-width="5"></div>
-                    </li>
-                    <li>
-                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="playlist 3" data-percent="45" data-text="45%" data-width="5"></div>
+                      <div class="playlist-desc">
+                        <p>
+                          <span>Playlist</span><b>Lincoln High School (8/13)</b><em>Practice</em>
+                        </p>
+                      </div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="watched" data-percent="80" data-text="1h10m" data-width="5"></div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="videos" data-percent="80" data-text="4 of 5" data-width="5"></div>
                     </li>
                   </ul>
+                  <div class="cycle-nav">
+                    <a class="prev" href="#" id="prev3"><i class="mdi-hardware-keyboard-arrow-left medium"></i></a><a class="next" href="#" id="next3"><i class="mdi-hardware-keyboard-arrow-right medium"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card white">
+          <div class="card-content">
+            <div class="profile-image">
+              <img src="/assets/images/placeholder-1.jpg">
+              <div class="player-number-year">
+                <span class="jersey-number sr">34</span><span class="year">SR (2016)</span>
+              </div>
+            </div>
+            <div class="profile-details">
+              <div class="header">
+                <h4>
+                  Dean, James
+                </h4>
+                <span><a href="maito:#">jdean@uni.edu</a></span>
+              </div>
+              <div class="details">
+                <div class="vitals">
+                  <h5>
+                    Vitals
+                  </h5>
+                  <p>Position: <strong>QB</strong></p><p>Height: <strong>6&#39;0&#34;</strong></p><p>Weight: <strong>185lbs</strong></p>
+                </div>
+                <div class="seasons">
+                  <h5>
+                    Seasons
+                  </h5>
+                  <p>
+                    <b>2015-2016</b>
+                  </p>
+                  <p>
+                    <b>2014-2015</b>
+                  </p>
+                  <p>
+                    <b>2013-2014</b>
+                  </p>
+                  <p>
+                    <b>2012-2013</b>
+                  </p>
+                </div>
+                <div class="activity">
+                  <h5>
+                    Video Activity
+                  </h5>
+                  <ul class="cycle-slideshow" data-allow-wrap="false" data-cycle-carousel-fluid="true" data-cycle-carousel-visible="1" data-cycle-fx="carousel" data-cycle-next="#next4" data-cycle-pager="#pager" data-cycle-prev="#prev4" data-cycle-slides="&gt; li" data-cycle-timeout="0">
+                    <li>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="today" data-percent="25" data-text="15m" data-width="5"></div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="yesterday" data-percent="75" data-text="45m" data-width="5"></div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="last 7 days" data-percent="32" data-text="2h25m" data-width="5"></div>
+                    </li>
+                    <li>
+                      <div class="playlist-desc">
+                        <p>
+                          <span>Playlist</span><b>Lincoln High School (8/13)</b><em>Game Footage</em>
+                        </p>
+                      </div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="watched" data-percent="33" data-text="20m" data-width="5"></div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="videos" data-percent="33" data-text="2 of 6" data-width="5"></div>
+                    </li>
+                    <li>
+                      <div class="playlist-desc">
+                        <p>
+                          <span>Playlist</span><b>Lincoln High School (8/13)</b><em>Practice</em>
+                        </p>
+                      </div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="watched" data-percent="80" data-text="1h10m" data-width="5"></div>
+                      <div class="circle-graph" data-bgcolor="#eee" data-dimension="87" data-fgcolor="#4caf50" data-fill="#fff" data-info="videos" data-percent="80" data-text="4 of 5" data-width="5"></div>
+                    </li>
+                  </ul>
+                  <div class="cycle-nav">
+                    <a class="prev" href="#" id="prev4"><i class="mdi-hardware-keyboard-arrow-left medium"></i></a><a class="next" href="#" id="next4"><i class="mdi-hardware-keyboard-arrow-right medium"></i></a>
+                  </div>
                 </div>
               </div>
             </div>

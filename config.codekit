@@ -27,6 +27,48 @@
 		"outputStyle": 1,
 		"railsCompatible": 0
 		},
+	"\/assets\/partials\/athlete-card-2.slim": {
+		"compileOnly": 0,
+		"fileType": 1024,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/partials\/athlete-card-2.slim",
+		"logicless": 0,
+		"outputAbbreviatedPath": "\/assets\/partials\/athlete-card-2.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
+		},
+	"\/assets\/partials\/athlete-card-3.slim": {
+		"compileOnly": 0,
+		"fileType": 1024,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/partials\/athlete-card-3.slim",
+		"logicless": 0,
+		"outputAbbreviatedPath": "\/assets\/partials\/athlete-card-3.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
+		},
+	"\/assets\/partials\/athlete-card-4.slim": {
+		"compileOnly": 0,
+		"fileType": 1024,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/partials\/athlete-card-4.slim",
+		"logicless": 0,
+		"outputAbbreviatedPath": "\/assets\/partials\/athlete-card-4.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
+		},
 	"\/assets\/partials\/athlete-card.slim": {
 		"compileOnly": 0,
 		"fileType": 1024,
@@ -408,24 +450,15 @@
 		"fileType": 8,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"importCSS": 1,
+		"importCSS": 0,
 		"inputAbbreviatedPath": "\/assets\/styles\/app.styl",
 		"outputAbbreviatedPath": "\/assets\/styles\/min\/app.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
-		},
-	"\/assets\/styles\/materialize\/materialize.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/styles\/materialize\/materialize.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/assets\/styles\/materialize\/sass\/components\/_buttons.scss": {
 		"createSourceMap": 0,
@@ -899,10 +932,10 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/styles\/materialize\/sass\/materialize.scss",
-		"outputAbbreviatedPath": "\/assets\/styles\/materialize\/materialize.css",
+		"outputAbbreviatedPath": "\/assets\/styles\/min\/materialize.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
@@ -912,6 +945,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/styles\/min\/app.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/styles\/min\/materialize.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/styles\/min\/materialize.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1224,7 +1266,7 @@
 		},
 	"\/bower_components\/jquery-cycle2\/build\/plugin\/jquery.cycle2.carousel.min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/jquery-cycle2\/build\/plugin\/jquery.cycle2.carousel.min.js",
 		"outputAbbreviatedPath": "\/bower_components\/jquery-cycle2\/build\/plugin\/min\/jquery.cycle2.carousel.min-min.js",
@@ -3269,8 +3311,14 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/circliful\/js\/jquery.circliful.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/jquery-cycle2\/build\/plugin\/jquery.cycle2.carousel.min.js",
 			"position": 3,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/bower_components\/circliful\/js\/jquery.circliful.js",
+			"position": 4,
 			"type": 0
 			}
 		]

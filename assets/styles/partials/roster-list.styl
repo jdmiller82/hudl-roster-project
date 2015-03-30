@@ -90,38 +90,56 @@ section.roster-list
             
           .vitals
             padding-right 20px
-            width 140px
+            width 225px
           
           .seasons
             padding-right 20px
-            width 80px
+            width 144px
             
             p
               margin-bottom 7px
+              text-align center
           
           .activity
-            width 470px
+            position relative
+            width 321px
             
             h5
               margin-right 20px
             
-            .charts
-              width 470px
-              height 87px
-              overflow-x scroll
-              overflow-y hidden
-            
             ul
-              cf()
-              ///height 87px
-              //width 612px
               
               li
-                //display inline-block
-                //margin-right 15px
-                //float left
+                cf()
+                
+                .playlist-desc
+                  display inline-block
+                  float left
+                  margin-right 20px
+                  width 87px
+                  height @width
+                  white-space normal
+                  
+                  p
+                    font-size 0.875rem
+                    
+                    span
+                      display block
+                      margin 0 0 13px
+                      border-bottom 1px solid #607d8b
+                    em
+                      display block
+                      margin-top 6px
+                      font-size 0.75rem
                 
                 .circliful
+                  display inline-block
+                  float left
+                  margin-right 20px
+                  
+                  &:last-child
+                    margin 0
+                  
                   .circle-text
                     font-size 1.25rem !important
                     font-weight 500
@@ -129,4 +147,32 @@ section.roster-list
                   .circle-info
                     font-size 0.65rem
                     line-height 117px !important
+            
+            .cycle-nav
+              position absolute
+              top 30px
+              height 90px
+              width 321px
+              overflow hidden
+              
+              a
+                position absolute
+                top 13px
+                background rgba(144, 164, 174, 0.8)
+                opacity 0
+                transition all 0.25s ease-in-out
+                color white
+                
+                &.prev
+                  left -10px
+                  border-top-right-radius 5px
+                  border-bottom-right-radius 5px
+                &.next
+                  right -30px
+                  border-top-left-radius 5px
+                  border-bottom-left-radius 5px
+              
+              &:hover
+                a
+                  opacity 1
       
