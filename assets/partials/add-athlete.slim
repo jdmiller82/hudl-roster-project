@@ -1,9 +1,9 @@
 section.add-athlete
-  a.waves-effect.waves-light.btn style='margin-right:20px'
+  a.waves-effect.waves-light.btn.modal-trigger href='#modal1' style='margin-right:20px'
     i.mdi-file-file-upload.left
     span import roster (excel, csv)
   
-  a.waves-effect.waves-light.btn
+  a.waves-effect.waves-light.btn.modal-trigger href='#modal2'
     i.mdi-file-file-download.left
     span export roster
   
@@ -12,7 +12,7 @@ section.add-athlete
     
     div.col-wrap
       div.img-upload
-        a.waves-effect.waves-light href='#'
+        a.waves-effect.waves-light.modal-trigger href='#modal3'
           i.mdi-image-camera-alt.medium
       
       div.form-col
@@ -53,7 +53,31 @@ section.add-athlete
       a.waves-effect.waves-light.btn.gray style='margin-right:20px' href='#'
         span Add More Details
       
-      a.waves-effect.waves-light.btn.green href='#'
+      a.waves-effect.waves-light.btn.green href='#' onclick='toast("Athlete Added", 4000)'
         i.mdi-content-add-circle.left
         span Add Athlete
-      
+
+/* modals */
+div#modal1.modal
+  div.modal-content
+    h4 Import Roster (EXCEL, CSV)
+    p This is where there would be an upload form...
+  div.modal-footer
+    a.waves-effect.waves-green.btn.modal-action.modal-close style='margin-right:20px;' href='#' Import Roster
+    a.waves-effect.waves-green.btn-flat.modal-action.modal-close href='#' Close
+
+div#modal2.modal
+  div.modal-content
+    h4 Export Roster
+    p This is where there would be options to download stuff...
+  div.modal-footer
+    a.waves-effect.waves-green.btn.modal-action.modal-close style='margin-right:20px;' href='#' Export Roster
+    a.waves-effect.waves-green.btn-flat.modal-action.modal-close href='#' Close
+    
+div#modal3.modal
+  div.modal-content
+    h4 Upload Profile Picture
+    p This is where there would be an upload form...
+  div.modal-footer
+    a.waves-effect.waves-green.btn.modal-action.modal-close style='margin-right:20px;' href='#' Upload Profile Picture
+    a.waves-effect.waves-green.btn-flat.modal-action.modal-close href='#' Close

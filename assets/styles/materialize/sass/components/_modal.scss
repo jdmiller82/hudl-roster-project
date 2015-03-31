@@ -24,19 +24,25 @@
   h1,h2,h3,h4 {
     margin-top: 0;
   }
-
+  
+  h4 {
+    font-size: 1.25rem;
+    margin-bottom: 7px
+  }
+  
   .modal-content {
-    padding: 24px;
+    padding: 20px;
   }
 
   .modal-footer {
     background-color: #eee;
-    padding: 4px 6px;
-    height: 56px;
-    width: 100%;
+    padding: 20px;
+    display: block;
+    text-align: right;
 
     .btn, .btn-flat {
-      float: right;
+      display: inline-block;
+      //float: right;
       margin: 6px 0;
     }
   }
